@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Για τη Μαρία</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💖 Στη Μαρία 💖</h1>
+
+    <p>Μαρία,<br/>
+    είσαι η σκέψη που φωτίζει τη μέρα μου<br/>
+    και το όνειρο που γλυκαίνει τη νύχτα μου.</p>
+
+    <p>Με κάθε χαμόγελό σου<br/>
+    ο κόσμος μου γίνεται πιο όμορφος.</p>
+
+    <p>Σε ευχαριστώ που υπάρχεις,<br/>
+    που γεμίζεις τη ζωή μου με αγάπη<br/>
+    και που κάνεις την καρδιά μου<br/>
+    να χτυπά πιο δυνατά.</p>
+
+    <p>Για σένα,<br/>
+    για την αγάπη μας,<br/>
+    για όσα ζήσαμε<br/>
+    κι όσα ακόμα θα ζήσουμε μαζί. 🤍</p>
+
+    <div class="signature">Με όλη μου την καρδιά,<br/>Σε αγαπώ, Μαρία.</div>
+  </div>
+
+  <script>
+    // Δημιουργία πολλαπλών καρδιών στο φόντο
+    const count = 30;
+    for (let i = 0; i < count; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      const size = 10 + Math.random() * 30; // px
+      heart.style.setProperty('--size', size + 'px');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = 3 + Math.random() * 6 + 's';
+      heart.style.opacity = 0.6 + Math.random() * 0.4;
+      document.body.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
